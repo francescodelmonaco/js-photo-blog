@@ -28,6 +28,12 @@ body {
     background-image: url(../img/cork.png);
 }
 
+.pin {
+    position: absolute;
+    left: 47%;
+    top: -10px;
+}
+
 .container {
     /* flex */
     display: flex;
@@ -52,6 +58,8 @@ body {
     align-items: flex-start;
 
     padding: 1rem;
+
+    position: relative;
 }
 
 .polaroid_info {
@@ -70,4 +78,62 @@ img {
 .date {
     font-family: "Sometype Mono", "monospace";
     color: var(--color-gray);
+}
+
+/* tablet responsiveness */
+@media screen and (max-width: 768px) {
+    h1 {
+        /* background-image: url(../img/wall.png);
+        
+        font-family: "Edu TAS Beginner", sans-serif;
+        text-align: center; */
+        font-size: 3rem;
+    
+        /* padding: 1rem 0; */
+    }
+
+    .polaroid {
+        /* background-color: var(--color-white); */
+        
+        /* flex */
+        flex-basis: calc(100% / 2 - 1rem);
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    
+        padding: 1rem;
+    
+        position: relative; */
+    }
+}
+
+/* mobile responsiveness */
+@media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
+        h1 {
+            /* background-image: url(../img/wall.png);
+            
+            font-family: "Edu TAS Beginner", sans-serif;
+            text-align: center; */
+            font-size: 2.5rem;
+        
+            /* padding: 1rem 0; */
+        }
+        
+        .polaroid {
+            /* background-color: var(--color-white); */
+            
+            /* flex */
+            flex-basis: 100%;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        
+            padding: 1rem;
+        
+            position: relative; */
+        }
+    }
 }
