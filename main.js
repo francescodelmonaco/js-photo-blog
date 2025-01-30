@@ -1,5 +1,6 @@
 // add polaroid from API call
 const container = document.querySelector(".container");
+const btn = document.querySelector(".btn");
 
 function addPolaroid() {
     fetch("https://lanciweb.github.io/demo/api/pictures/", { method: "GET" })
