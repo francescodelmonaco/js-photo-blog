@@ -1,12 +1,13 @@
 // add polaroid from API call
 const container = document.querySelector(".container");
 
-function addPolaroid() {    
-    fetch("https://lanciweb.github.io/demo/api/pictures/", {method: "GET"})
+function addPolaroid() {
+    fetch("https://lanciweb.github.io/demo/api/pictures/", { method: "GET" })
         .then(response => response.json())
-            
+
         .then(data => {
-            data.forEach( ({ title, date, url }) => {
+            data.forEach(element => {
+                const { title, date, url } = element
                 container.innerHTML += `
                     <div class="polaroid">
                         <figure>
@@ -16,13 +17,13 @@ function addPolaroid() {
                 
                         <div class="polaroid_info">
                             <span class="date"><strong>${date}</strong></span>
-                            <span class="sans-serif">${title}</span>
+                            <span class="info"><strong>${title}</strong></span>
                         </div>
                     </div>
                 `
             })
         })
-        
+
         .catch(error => {
             console.error(error);
         });

@@ -9,20 +9,28 @@
     --color-black: black;
 }
 
-.sans-serif {
-    font-family: sans-serif;
+.info {
+    font-family: "Edu TAS Beginner", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
 }
 
-.polaroid:hover{
+/* hover */
+.polaroid:hover {
     cursor: pointer;
     transform: rotate(-5deg);
     scale: 1.1;
 }
 
+.polaroid:hover .pin {
+    display: none;
+}
+
 /* header */
 h1 {
     background-image: url(../img/wall.png);
-    
+    background-size: contain;
+
     font-family: "Edu TAS Beginner", sans-serif;
     text-align: center;
     font-size: 4rem;
@@ -33,6 +41,7 @@ h1 {
 /* main */
 body {
     background-image: url(../img/cork.png);
+    background-size: contain;
 }
 
 .pin {
@@ -57,7 +66,7 @@ body {
 .polaroid {
     background-color: var(--color-white);
     box-shadow: 6px 6px 12px var(--color-black);
-    
+
     /* flex */
     flex-basis: calc(100% / 3 - 1rem);
     display: flex;
@@ -96,13 +105,13 @@ img {
         font-family: "Edu TAS Beginner", sans-serif;
         text-align: center; */
         font-size: 3rem;
-    
+
         /* padding: 1rem 0; */
     }
 
     .polaroid {
         /* background-color: var(--color-white); */
-        
+
         /* flex */
         flex-basis: calc(100% / 2 - 1rem);
         /* display: flex;
@@ -125,13 +134,13 @@ img {
             font-family: "Edu TAS Beginner", sans-serif;
             text-align: center; */
             font-size: 2.5rem;
-        
+
             /* padding: 1rem 0; */
         }
-        
+
         .polaroid {
             /* background-color: var(--color-white); */
-            
+
             /* flex */
             flex-basis: 100%;
             /* display: flex;
