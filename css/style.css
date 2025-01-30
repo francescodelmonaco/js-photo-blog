@@ -18,8 +18,11 @@
 /* hover */
 .polaroid:hover {
     cursor: pointer;
-    transform: rotate(-5deg);
+    transform: rotate(-10deg);
     scale: 1.1;
+    box-shadow: 24px 24px 24px var(--color-black);
+    transition: 330ms;
+    z-index: 1;
 }
 
 .polaroid:hover .pin {
