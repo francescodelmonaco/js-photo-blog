@@ -60,6 +60,10 @@ h1 {
     gap: 3rem;
 }
 
+.d-none {
+    display: none;
+}
+
 .zoom {
     display: flex;
     justify-content: center;
